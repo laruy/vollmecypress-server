@@ -7,4 +7,5 @@ authRouter.post('/login', login);
 authRouter.post('/logout', verificaTokenJWT(), logout);
 export default (app) => {
     app.use('/auth', authRouter);
+    console.log('aaa')
 };
